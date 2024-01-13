@@ -2,27 +2,12 @@
 
 /**
  * Class ICS v2024-01-13
- * Tim David Saxen; https://www.nezmal.de; ds@netzmal.de
+ * Tim David Saxen; https://www.nezmal.de; ds@netzmal.de; MIT License
  * 
  * This PHP class is used for creating ICS (iCalendar) files.
  * It allows adding multiple events with various properties such as
  * description, start and end date, location, summary, URL, and timezone.
  *
- * Example Usage:
- * ```
- * $ics = new ICS(['timezone' => 'America/New_York']);
- * $ics->addEvent([
- *     'description' => 'This is a description for an event.',
- *     'dtstart' => '2024-01-12 10:00:00',
- *     'dtend' => '2024-01-12 12:00:00',
- *     'location' => '123 Main St, Anytown, USA',
- *     'summary' => 'Event Summary',
- *     'url' => 'http://example.com',
- *     'timezone' => 'Europe/Berlin', // Optional: Specific timezone for this event
- *     'uid' => '1'
- * ]);
- * echo $ics->build();
- * ```
  */
 
 class ICS {
